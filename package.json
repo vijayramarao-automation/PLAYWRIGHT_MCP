@@ -2,7 +2,12 @@
   "name": "playwright_mcp",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --grep @api",
+    "test:cart": "playwright test --grep @cart",
+    "test:pom": "playwright test --grep @pom"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

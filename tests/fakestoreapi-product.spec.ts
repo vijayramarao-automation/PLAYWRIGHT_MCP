@@ -16,7 +16,7 @@ const productSchema = {
   additionalProperties: true,
 };
 
-test('GET /products/1 returns valid product object', async ({ request: apiRequest }) => {
+test('GET /products/1 returns valid product object', { tag: '@api' }, async ({ request: apiRequest }) => {
   const response = await apiRequest.get(endpoint);
 
   expect(response.status()).toBe(200);

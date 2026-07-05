@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Add Women\'s Android Heart T-Shirt to cart and verify it is present', async ({ page }) => {
+test('Add Women\'s Android Heart T-Shirt to cart and verify it is present', { tag: '@cart' }, async ({ page }) => {
   await page.goto('https://shop.polymer-project.org/');
 
   // Navigate to Ladies T-shirts
